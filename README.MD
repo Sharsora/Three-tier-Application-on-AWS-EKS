@@ -54,7 +54,10 @@ ALB Controller ne wo file dekhi aur AWS par ALB create kar diya.
 Ab User ALB ke URL se aapki application access kar sakta hai.
 
 Setup EKS Cluster
-```eksctl create cluster --name three-tier-cluster --region us-west-2 --node-type t2.medium --nodes-min 2 --nodes-max 2
+
+```
+eksctl create cluster --name three-tier-cluster --region us-west-2 --node-type t2.medium --nodes-min 2 --nodes-max 2
 aws eks update-kubeconfig --region us-west-2 --name three-tier-cluster
-kubectl get nodes```
+kubectl get nodes
+```
 
